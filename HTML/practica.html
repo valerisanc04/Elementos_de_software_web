@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>pagina de practica</title>
+        <link rel="stylesheet" href="practica.css">
+    </head>
+    <body>
+        <header id="inicio">
+            <h1>construccion se software web</h1>
+            <p>Resumen semana n3 htmla y css intermedio</p>
+
+        </header>
+
+        <nav>
+            <a href="#semantica">Secciones semanticas HTML</a>
+            <a href="#Enlaces">Enlaces e imagenes</a>
+            <a href="#Tablas">Tablas</a>
+            <a href="#css-estilos">Estilo class y selectores </a>
+           
+
+        </nav>
+
+        <maim>
+            <section id="Semantica">
+                <h2 class="resaltado">1. Etiquetas Semanticas </h2>
+                <article>
+                    <h3>El uso de las etiquetas semanticas: section, article, aside</h3>
+                    <p>Es esencial estructurar nuestra pagina de acuerdo a la funcion del 
+                    contenido.<strong>article</strong> es contenido independientes mientras que 
+                    <strong>aside </strong>por otro lado el aside contiene informacion de menor 
+                    relevancia</p>
+                </article>
+                <aside>
+                    <p><em>Nota:</em>Usar correctamente estas etiquetas no cabia el diseño, pero 
+                    aporta un gran valor para la <srtong>accesibilidad</srtong>de la informacion
+                    para los usuarios</p>
+                </aside>
+            </section>
+            <section id="Enlaces">
+                <h2 class="resaltado">2.Enlaces e imagenes </h2>
+                <p>Con la etiqueta <em>a</em>podemos conectar nuestra web com diferentes secciones.
+                para volver a la seccion principal puedes hacer clicken el enlace que contenga
+                la ruta hacia el principio</p>
+                <a href="#inicio" class="boton" title="volver al principio de la pagina">Volver 
+                arriba</a>
+                <p>La sehunda forma de utlizar la etiqueta<em>a</em> nos sirve para enlazar 
+                paginas extrernas dentro de nuestra misma pagina. permitiendo abrirlas dentro de la misma
+                pestaña o una pestaña nueva </p>
+                <a href="https://www.google.com" target="_blank" class="boton">Google pagina externa </a> 
+                <a href="https://www.google.com" class="boton">Google pagina interna</a>  
+                
+                <p>Tambien podemos incluir imagenes usando la etiqueta <strong>img</strong> recuerda siempre
+                usar el atributo src y alt</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJPWtJqPFhFOm0SU1cLkdfqY9HEYTQOp7paA&s"
+                alt="Ejemplo de etiqueta a href en HTML"
+                style="max-width: 250px; display: block; margin: 10px auto; border-radius:8px"> 
+            </section>
+
+            <section id="Tablas">
+                <h2 class="resaltado"> 3. Pesentacion de datos tabulados</h2>
+                <p> Las tablas hoy en dia se utilizan para presentar datos tabulados.</p>
+                <table>
+                    <tr>
+                        <th>Etiquetas HTML</th>
+                        <th>Descripcion o funcionalidad</th>
+                    </tr>
+                    <tr>
+                        <td>Strong</td>
+                        <td>Resalta el texto con negrita</td>
+                    </tr>
+                    <tr>
+                        <th>En</th>
+                        <th>Resalta el texto con cursiva</th>
+                    </tr>
+                    <tr>
+                        <th>Br</th>
+                        <th>Salto de linea</th>
+
+                        
+                        
+                    </tr>
+                </table>
+            </section>
+            <section id="css-estilos">
+                <h2 class="resaltado">4. Estilos CSS y selectores</h2>
+                <article>
+                    <p>El aspecto de esta pagina esta controlada por CSS. En el codigo html notaras
+                        el uso de css por medio de los selectores, tales como: selector <em>etiquetas</em>
+                        ,<em>selector</em> <em>clase</em>, selector <em>id</em>, selector <em>pseuclase</em></p>
+
+                        <p id="mensaje-importante"><code>La cascada: </code> El orden de escritura , la especifocacion y 
+                        la importancia de los estilos css.</p>
+
+                    </article>
+
+            </section>
+            
+        </maim>
+
+        <footer>
+            <p>Practica de HTML semantico y CSS intermedio</p>
+            <p>Copyright 2026 - Valeri sanchez (resumen)</p>
+        </footer>
+</html>
