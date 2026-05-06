@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicios HTML y CSS completos</title>
+
+<style>
+/* =========================
+PUNTO 4: HERENCIA GLOBAL
+========================== */
+body {
+font-size: 18px;
+font-family: Tahoma;
+color: rebeccapurple;
+background-color: mediumpurple;
+line-height: 1.5;
+margin: 20px;
+}
+
+h1 {
+text-align: center;
+}
+
+/* =========================
+TABLA (PUNTO 1)
+========================== */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 40px;
+background-color: white;
+color: black;
+}
+
+th, td {
+border: 1px solid #ccc;
+padding: 10px;
+text-align: center;
+}
+
+th {
+background-color: #4CAF50;
+color: white;
+}
+
+/* =========================
+PÁGINA SEMÁNTICA (PUNTO 2)
+========================== */
+header {
+background-color: rgba(0,0,0,0.2);
+padding: 15px;
+text-align: center;
+}
+
+main {
+background-color: white;
+padding: 15px;
+margin-top: 10px;
+}
+
+main p {
+margin-bottom: 10px;
+}
+
+aside {
+background-color: #fff3cd;
+padding: 15px;
+margin-top: 10px;
+border-left: 5px solid #ffc107;
+}
+
+footer {
+text-align: center;
+margin-top: 15px;
+font-size: 14px;
+}
+
+/* =========================
+PUNTO 3 y 5 (CAJAS DE TEXTO)
+========================== */
+.pregunta {
+background-color: white;
+padding: 15px;
+margin-top: 20px;
+border-radius: 8px;
+}
+
+.respuesta {
+background-color: #f0f0f0;
+padding: 10px;
+margin-top: 5px;
+border-left: 4px solid #333;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===================== -->
+<!-- PUNTO 1 -->
+<!-- ===================== -->
+
+<h1>Plan de comidas semanal</h1>
+
+<table>
+<tr>
+<th>Lunes</th>
+<th>Martes</th>
+<th>Miércoles</th>
+<th>Jueves</th>
+<th>Viernes</th>
+<th>Sábado</th>
+<th>Domingo</th>
+</tr>
+<tr>
+<td>Arroz con pollo</td>
+<td>Carne asada</td>
+<td>Pasta</td>
+<td>Sopa</td>
+<td>Pescado</td>
+<td>Pizza</td>
+<td>Bandeja paisa</td>
+</tr>
+</table>
+
+<!-- ===================== -->
+<!-- PUNTO 2 -->
+<!-- ===================== -->
+
+<header>
+<h1>Título principal de la página</h1>
+</header>
+
+<main>
+<p>Este es el primer párrafo de contenido principal.</p>
+<p>Este es el segundo párrafo con información importante.</p>
+<p>Este es el tercer párrafo con contenido adicional.</p>
+</main>
+
+<aside>
+<p>Anuncio secundario 1</p>
+<p>Anuncio secundario 2</p>
+</aside>
+
+<footer>
+<p>©️ 2020</p>
+</footer>
+
+<!-- ===================== -->
+<!-- PUNTO 3 -->
+<!-- ===================== -->
+
+<div class="pregunta">
+<h2>Punto 3: Coloreando enlaces</h2>
+
+<p><strong>Pregunta:</strong> Si aplicamos color rojo a un &lt;aside&gt; con clase .links, ¿qué quedará en rojo?</p>
+
+<div class="respuesta">
+<strong>Respuesta:</strong> Todo el texto dentro del aside, incluyendo los enlaces, porque el color se hereda.
+Sin embargo, si los enlaces tienen un color propio definido, ese estilo puede sobrescribir la herencia.
+</div>
+</div>
+
+<!-- ===================== -->
+<!-- PUNTO 5 -->
+<!-- ===================== -->
+
+<div class="pregunta">
+<h2>Punto 5: Enlaces y CSS</h2>
+
+<p><strong>Pregunta 1:</strong> ¿Por qué los enlaces son verdes y no rojos?</p>
+<div class="respuesta">
+Porque existe una regla CSS específica para los enlaces que tiene más prioridad que la herencia.
+</div>
+
+<p><strong>Pregunta 2:</strong> ¿Cómo hacer que los enlaces sean rojos?</p>
+<div class="respuesta">
+Aplicando: <code>a { color: red; }</code>
+</div>
+
+<p><strong>Pregunta 3:</strong> ¿Qué pasa si cambiamos &lt;ul&gt; y &lt;li&gt; por &lt;div&gt;?</p>
+<div class="respuesta">
+Se pierde la semántica de lista, aunque visualmente puede verse igual.
+</div>
+
+<p><strong>Pregunta 4:</strong> ¿Cómo rehacer el CSS sin tocar el original?</p>
+<div class="respuesta">
+Usando clases nuevas para reemplazar los selectores sin modificar el código base.
+</div>
+</div>
+
+</body>
+</html>
