@@ -3,102 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Ejercicios HTML y CSS completos</title>
+<link rel="stylesheet" href="tallerpractico.css">
 
 <style>
-/* =========================
-PUNTO 4: HERENCIA GLOBAL
-========================== */
-body {
-font-size: 18px;
-font-family: Tahoma;
-color: rebeccapurple;
-background-color: mediumpurple;
-line-height: 1.5;
-margin: 20px;
-}
 
-h1 {
-text-align: center;
-}
 
-/* =========================
-TABLA (PUNTO 1)
-========================== */
-table {
-width: 100%;
-border-collapse: collapse;
-margin-bottom: 40px;
-background-color: white;
-color: black;
-}
-
-th, td {
-border: 1px solid #ccc;
-padding: 10px;
-text-align: center;
-}
-
-th {
-background-color: #4CAF50;
-color: white;
-}
-
-/* =========================
-PÁGINA SEMÁNTICA (PUNTO 2)
-========================== */
-header {
-background-color: rgba(0,0,0,0.2);
-padding: 15px;
-text-align: center;
-}
-
-main {
-background-color: white;
-padding: 15px;
-margin-top: 10px;
-}
-
-main p {
-margin-bottom: 10px;
-}
-
-aside {
-background-color: #fff3cd;
-padding: 15px;
-margin-top: 10px;
-border-left: 5px solid #ffc107;
-}
-
-footer {
-text-align: center;
-margin-top: 15px;
-font-size: 14px;
-}
-
-/* =========================
-PUNTO 3 y 5 (CAJAS DE TEXTO)
-========================== */
-.pregunta {
-background-color: white;
-padding: 15px;
-margin-top: 20px;
-border-radius: 8px;
-}
-
-.respuesta {
-background-color: #f0f0f0;
-padding: 10px;
-margin-top: 5px;
-border-left: 4px solid #333;
-}
 </style>
 </head>
 
 <body>
 
-<!-- ===================== -->
-<!-- PUNTO 1 -->
-<!-- ===================== -->
+/*PUNTO 1*/
 
 <h1>Plan de comidas semanal</h1>
 
@@ -123,68 +38,73 @@ border-left: 4px solid #333;
 </tr>
 </table>
 
-<!-- ===================== -->
-<!-- PUNTO 2 -->
-<!-- ===================== -->
+/*PUNTO 2*/
 
 <header>
-<h1>Título principal de la página</h1>
+<h1>¿Por que es importante comer 3 veces?</h1>
 </header>
 
 <main>
-<p>Este es el primer párrafo de contenido principal.</p>
-<p>Este es el segundo párrafo con información importante.</p>
-<p>Este es el tercer párrafo con contenido adicional.</p>
+<p>Desayuno: es la primera comida del día y sirve para recuperar energía después de dormir
+ Ayuda a mejorar la concentración, el ánimo y el rendimiento en las actividades diarias.</p>
+<p>Almuerzo: generalmente es la comida más completa. Su función es reponer la energía gastada durante
+ la mañana y aportar nutrientes para continuar el resto del día con fuerza y atención</p>
+<p>Cena: es la última comida del día y ayuda al cuerpo a mantenerse nutrido antes de descansar
+ Se recomienda que sea más ligera para facilitar una buena digestión y un mejor descanso</p>
 </main>
 
 <aside>
-<p>Anuncio secundario 1</p>
-<p>Anuncio secundario 2</p>
+<p>¿Que debe comer un adolescente?</p>
+<p>Frutas y verduras
+Proteínas como carne, huevos o frijoles
+Carbohidratos como arroz, pan o pasta
+Lácteos como leche o yogur
+Mucha agua
+
+También es importante evitar el exceso de comida chatarra y bebidas azucaradas.</p>
 </aside>
 
 <footer>
-<p>©️ 2020</p>
+<p>©️ 2026</p>
 </footer>
 
-<!-- ===================== -->
-<!-- PUNTO 3 -->
-<!-- ===================== -->
+/*PUNTO 3*/
 
 <div class="pregunta">
 <h2>Punto 3: Coloreando enlaces</h2>
 
-<p><strong>Pregunta:</strong> Si aplicamos color rojo a un &lt;aside&gt; con clase .links, ¿qué quedará en rojo?</p>
+<p><strong>Pregunta:</strong> Si aplicamos color rojo a un <em>aside</em> con clase links, ¿qué quedará en rojo?</p>
 
 <div class="respuesta">
-<strong>Respuesta:</strong> Todo el texto dentro del aside, incluyendo los enlaces, porque el color se hereda.
-Sin embargo, si los enlaces tienen un color propio definido, ese estilo puede sobrescribir la herencia.
+<strong>Respuesta:</strong> Todo el texto dentro del aside tambien los enlaces, porque el color se hereda pero si ya 
+tenian un color definido apareceran con ese color y no el rojo
 </div>
 </div>
 
-<!-- ===================== -->
-<!-- PUNTO 5 -->
-<!-- ===================== -->
+/*PUNTO 5*/
 
 <div class="pregunta">
 <h2>Punto 5: Enlaces y CSS</h2>
 
 <p><strong>Pregunta 1:</strong> ¿Por qué los enlaces son verdes y no rojos?</p>
-<div class="respuesta">
-Porque existe una regla CSS específica para los enlaces que tiene más prioridad que la herencia.
+<div class="R//=">
+Porque existe una regla CSS específica para los enlaces que tiene más prioridad que la herencia entonces
+se usa la regla que es mas especifica
 </div>
 
-<p><strong>Pregunta 2:</strong> ¿Cómo hacer que los enlaces sean rojos?</p>
-<div class="respuesta">
+<p><strong>Pregunta 2:</strong> ¿hacer que los enlaces sean rojos?</p>
+<div class="R//=">
 Aplicando: <code>a { color: red; }</code>
 </div>
 
-<p><strong>Pregunta 3:</strong> ¿Qué pasa si cambiamos &lt;ul&gt; y &lt;li&gt; por &lt;div&gt;?</p>
-<div class="respuesta">
-Se pierde la semántica de lista, aunque visualmente puede verse igual.
+<p><strong>Pregunta 3:</strong> Rehacer el HTML usando <em>div</em> en lugar de <em>ul</em> y <em>li</em> ¿Qué pasa?</p>
+<div class="R//=">
+Se pierde la semántica de lista y puede cambiar la alineacion aunque visualmente puede verse bien
 </div>
 
-<p><strong>Pregunta 4:</strong> ¿Cómo rehacer el CSS sin tocar el original?</p>
-<div class="respuesta">
+<p><strong>Pregunta 4:</strong> Comentar el CSS que no se puede tocar y reescribir este CSS usando una
+clase por selector para que se vea igual.</p>
+<div class="R//=">
 Usando clases nuevas para reemplazar los selectores sin modificar el código base.
 </div>
 </div>
